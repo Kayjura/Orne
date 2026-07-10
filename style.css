@@ -254,3 +254,15 @@ opacity:.7;
 }
 
 }
+
+
+/* Estilos para la foto de la portada */
+.foto-portada {
+    width: 100%;        /* Ocupará el ancho disponible de la pantalla en celulares */
+    max-width: 300px;   /* Pero nunca será más ancha que 300 píxeles en PC */
+    height: auto;       /* Mantiene la proporción original de la foto para que no se deforme */
+    border-radius: 15px; /* Opcional: le da bordes redondeados a la foto */
+    margin: 20px auto;  /* Da un espacio arriba/abajo y centra la imagen */
+    display: block;     /* Necesario para que el centrado funcione */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Opcional: le da una sombrita linda */
+}

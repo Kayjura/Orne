@@ -272,7 +272,7 @@ opacity:.7;
     
     /* LÍNEAS MODIFICADAS PARA ACHICAR Y CENTRAR */
     width: 30%;               /* Ahora ocupa menos ancho dentro de la tarjeta */
-    max-width: 350px;         /* Tope máximo de tamaño para todo el grupo junto */
+    max-width: 100px;         /* Tope máximo de tamaño para todo el grupo junto */
     margin: 10px auto 0 auto; /* La palabra "auto" centra el grupo de fotos perfectamente */
 }
 

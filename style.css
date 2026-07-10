@@ -262,11 +262,11 @@ opacity:.7;
     width: 90%;        /* Evita que las fotos toquen los bordes del celular */
     max-width: 100px;  /* Límite para que no se vean gigantes en la computadora */
     margin: 20px auto; /* Centra el contenedor y le da aire arriba y abajo */
-
     flex: 1;             /* MAGIA: Hace que ambas fotos ocupen exactamente el 50% del espacio disponible */
     width: 30%;
     aspect-ratio: 1 / 1; /* Convierte las fotos en cuadrados perfectos (ideal si son de distintos tamaños) */
     object-fit: cover;   /* Recorta la foto suavemente para que llene el cuadrado sin deformarse ni estirarse */
     border-radius: 12px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombrita para resaltar */
+}
 }

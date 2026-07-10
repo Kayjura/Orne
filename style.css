@@ -255,14 +255,23 @@ opacity:.7;
 
 
 
+/* Contenedor de la galería adaptable a celulares */
+.galeria-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;         /* Espacio de separación entre las fotos */
+    width: 90%;        /* Evita que las fotos toquen los bordes del celular */
+    max-width: 500px;  /* Límite para que no se vean gigantes en la computadora */
+    margin: 20px auto; /* Centra el contenedor y le da aire arriba y abajo */
+}
 
-/* Estilos para la foto de la portada */
-.foto-portada {
-    width: 100%;        /* Ocupará el ancho disponible de la pantalla en celulares */
-    max-width: 300px;   /* Pero nunca será más ancha que 300 píxeles en PC */
-    height: auto;       /* Mantiene la proporción original de la foto para que no se deforme */
-    border-radius: 15px; /* Opcional: le da bordes redondeados a la foto */
-    margin: 20px auto;  /* Da un espacio arriba/abajo y centra la imagen */
-    display: block;     /* Necesario para que el centrado funcione */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Opcional: le da una sombrita linda */
+/* Fotos exactamente iguales una al lado de la otra */
+.galeria-fotos img {
+    flex: 1;             /* MAGIA: Hace que ambas fotos ocupen exactamente el 50% del espacio disponible */
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Convierte las fotos en cuadrados perfectos (ideal si son de distintos tamaños) */
+    object-fit: cover;   /* Recorta la foto suavemente para que llene el cuadrado sin deformarse ni estirarse */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombrita para resaltar */
 }

@@ -267,18 +267,21 @@ opacity:.7;
 /* GALERÍA DE FOTOS */
 .galeria-fotos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Crea exactamente 3 columnas del mismo ancho */
-    gap: 15px; /* Separación entre las fotos en computadora */
-    width: 100%; /* Ocupa el 100% del ancho disponible dentro de la tarjeta (.card) */
-    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    
+    /* LÍNEAS MODIFICADAS PARA ACHICAR Y CENTRAR */
+    width: 30%;               /* Ahora ocupa menos ancho dentro de la tarjeta */
+    max-width: 350px;         /* Tope máximo de tamaño para todo el grupo junto */
+    margin: 10px auto 0 auto; /* La palabra "auto" centra el grupo de fotos perfectamente */
 }
 
 .galeria-fotos img {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Transforma todas las fotos en cuadrados perfectos */
-    object-fit: cover; /* Rellena el cuadrado sin deformar ni estirar la imagen */
-    border-radius: 15px; /* Bordes redondeados acordes al diseño */
-    border: 1px solid rgba(255,255,255,.12); /* Mismo borde sutil que tienen tus tarjetas */
+    width: 30%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    border: 1px solid rgba(255,255,255,.12); 
 }
 
 
